@@ -19,7 +19,7 @@
         "fullscreen": false,
         "decorations": false,
         "transparent": true,
-        "alwaysOnTop": false
+        "alwaysOnTop": true
       }
     ],
     "security": {

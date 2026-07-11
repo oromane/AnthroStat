@@ -7,12 +7,43 @@
   --color-anthropic-primary: #D97757;
   --color-anthropic-error: #D93F3C;
   --color-anthropic-border: #424242;
+  --color-anthropic-glass: rgba(33, 33, 33, 0.7);
+  
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  
+  --animate-pulse-slow: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 4s ease-in-out infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
 }
 
 body {
-  background-color: var(--color-anthropic-bg);
+  background: transparent; /* Allows Tauri's transparent window setting to shine */
   color: var(--color-anthropic-text);
-  overflow: hidden; /* Hide scrollbars for desktop widget */
-  user-select: none; /* Prevent selection */
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Glassmorphism utility classes */
+.glass-panel {
+  background: linear-gradient(135deg, rgba(33,33,33,0.85) 0%, rgba(20,20,20,0.95) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #ECECEC, #9E9E9E);
 }

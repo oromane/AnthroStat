@@ -7,7 +7,10 @@
     "http:default",
     {
       "identifier": "http:default",
-      "allow": [{ "url": "http://localhost:5678/*" }]
+      "allow": [
+        { "url": "https://claude.ai/*" },
+        { "url": "https://api.claude.ai/*" }
+      ]
     }
   ]
 }
