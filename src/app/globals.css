@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-anthropic-bg: #212121;
+  --color-anthropic-text: #ECECEC;
+  --color-anthropic-subtext: #9E9E9E;
+  --color-anthropic-primary: #D97757;
+  --color-anthropic-error: #D93F3C;
+  --color-anthropic-border: #424242;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-anthropic-bg);
+  color: var(--color-anthropic-text);
+  overflow: hidden; /* Hide scrollbars for desktop widget */
+  user-select: none; /* Prevent selection */
+}
