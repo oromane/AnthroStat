@@ -7,6 +7,16 @@
   ],
   "permissions": [
     "core:default",
-    "core:window:allow-start-dragging"
+    "core:window:allow-start-dragging",
+    "core:window:allow-set-size",
+    "core:window:allow-close",
+    {
+      "identifier": "shell:allow-open",
+      "allow": [
+        {
+          "url": "https://github.com/oromane/AnthroStat"
+        }
+      ]
+    }
   ]
 }

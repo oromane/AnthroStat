@@ -1,3 +1,9 @@
+/**
+ * AnthroStat — i18n strings (EN, FR, ES, PT, RU)
+ * Author:  Oromane <https://github.com/oromane>
+ * Repo:    https://github.com/oromane/AnthroStat
+ * License: MIT
+ */
 export type SupportedLanguage = 'en' | 'fr' | 'es' | 'pt' | 'ru';
 
 export const translations: Record<SupportedLanguage, Record<string, string>> = {
@@ -13,12 +19,26 @@ export const translations: Record<SupportedLanguage, Record<string, string>> = {
     alert_threshold: "Alert Threshold (%)",
     language: "Language",
     time_format: "24h Format",
-    compact_mode: "Compact Mode"
+    compact_mode: "Compact Mode",
+    launch_startup: "Launch at startup",
+    always_on_top: "Always on top",
+    hide_taskbar: "Hide from taskbar",
+    usage_alerts: "Usage Alerts",
+    theme: "Theme",
+    dark: "Dark",
+    light: "Light",
+    system: "System",
+    warn_at: "Warn at (%)",
+    log_out: "Log Out",
+    history_1h: "1h",
+    history_5h: "5h",
+    history_1d: "1d",
+    history_1w: "1w"
   },
   fr: {
     app_title: "AnthroStat",
     messages: "Messages",
-    reset_at: "Réinitialisation",
+    reset_at: "Réinit. à",
     connection_lost: "Connexion Perdue",
     settings: "Configuration",
     save: "Enregistrer",
@@ -27,12 +47,26 @@ export const translations: Record<SupportedLanguage, Record<string, string>> = {
     alert_threshold: "Seuil d'alerte (%)",
     language: "Langue",
     time_format: "Format 24h",
-    compact_mode: "Mode Compact"
+    compact_mode: "Mode Compact",
+    launch_startup: "Lancer au démarrage",
+    always_on_top: "Toujours visible",
+    hide_taskbar: "Masquer de la barre des tâches",
+    usage_alerts: "Alertes d'usage",
+    theme: "Thème",
+    dark: "Sombre",
+    light: "Clair",
+    system: "Système",
+    warn_at: "Alerter à (%)",
+    log_out: "Déconnexion",
+    history_1h: "1h",
+    history_5h: "5h",
+    history_1d: "1j",
+    history_1w: "1s"
   },
   es: {
     app_title: "AnthroStat",
     messages: "Mensajes",
-    reset_at: "Reinicio A",
+    reset_at: "Reinicio a",
     connection_lost: "Conexión Perdida",
     settings: "Configuración",
     save: "Guardar",
@@ -41,12 +75,26 @@ export const translations: Record<SupportedLanguage, Record<string, string>> = {
     alert_threshold: "Umbral de Alerta (%)",
     language: "Idioma",
     time_format: "Formato 24h",
-    compact_mode: "Modo Compacto"
+    compact_mode: "Modo Compacto",
+    launch_startup: "Iniciar con el sistema",
+    always_on_top: "Siempre visible",
+    hide_taskbar: "Ocultar de la barra de tareas",
+    usage_alerts: "Alertas de uso",
+    theme: "Tema",
+    dark: "Oscuro",
+    light: "Claro",
+    system: "Sistema",
+    warn_at: "Avisar al (%)",
+    log_out: "Cerrar sesión",
+    history_1h: "1h",
+    history_5h: "5h",
+    history_1d: "1d",
+    history_1w: "1s"
   },
   pt: {
     app_title: "AnthroStat",
     messages: "Mensagens",
-    reset_at: "Reinício Às",
+    reset_at: "Reinicia às",
     connection_lost: "Conexão Perdida",
     settings: "Configuração",
     save: "Salvar",
@@ -55,7 +103,21 @@ export const translations: Record<SupportedLanguage, Record<string, string>> = {
     alert_threshold: "Limite de Alerta (%)",
     language: "Idioma",
     time_format: "Formato 24h",
-    compact_mode: "Modo Compacto"
+    compact_mode: "Modo Compacto",
+    launch_startup: "Iniciar com o sistema",
+    always_on_top: "Sempre visível",
+    hide_taskbar: "Ocultar da barra de tarefas",
+    usage_alerts: "Alertas de uso",
+    theme: "Tema",
+    dark: "Escuro",
+    light: "Claro",
+    system: "Sistema",
+    warn_at: "Avisar em (%)",
+    log_out: "Sair",
+    history_1h: "1h",
+    history_5h: "5h",
+    history_1d: "1d",
+    history_1w: "1s"
   },
   ru: {
     app_title: "AnthroStat",
@@ -69,10 +131,17 @@ export const translations: Record<SupportedLanguage, Record<string, string>> = {
     alert_threshold: "Порог предупреждения (%)",
     language: "Язык",
     time_format: "24ч Формат",
-    compact_mode: "Компактный Режим"
-  }
-};
-
-export const t = (lang: SupportedLanguage, key: string): string => {
-  return translations[lang]?.[key] || translations['en'][key] || key;
-};
+    compact_mode: "Компактный Режим",
+    launch_startup: "Запуск при старте",
+    always_on_top: "Поверх всех окон",
+    hide_taskbar: "Скрыть с панели задач",
+    usage_alerts: "Оповещения об использовании",
+    theme: "Тема",
+    dark: "Темная",
+    light: "Светлая",
+    system: "Системная",
+    warn_at: "Предупреждать при (%)",
+    log_out: "Выйти",
+    history_1h: "1ч",
+    history_5h: "5ч",
+    history_1d: "1д

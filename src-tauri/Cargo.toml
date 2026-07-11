@@ -1,10 +1,11 @@
 [package]
-name = "app"
+name = "anthrostat"
 version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
-license = ""
-repository = ""
+description = "AnthroStat — Minimalist desktop widget to monitor Claude AI usage limits."
+authors = ["Oromane <romane.raphael.rossignol@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/oromane/AnthroStat"
+homepage = "https://github.com/oromane/AnthroStat"
 edition = "2021"
 rust-version = "1.77.2"
 
@@ -24,4 +25,4 @@ log = "0.4"
 tauri = { version = "2.11.3", features = [] }
 tauri-plugin-log = "2"
 tauri-plugin-http = { version = "2", features = ["unsafe-headers"] }
-tauri-plugin-window-state = "2"
+tauri-plugin-

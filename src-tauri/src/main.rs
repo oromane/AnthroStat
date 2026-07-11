@@ -1,6 +1,6 @@
-// Prevents additional console window on Windows in release, DO NOT REMOVE!!
-#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+// AnthroStat — Claude AI usage monitor
+// Author:  Oromane <https://github.com/oromane>
+// Repo:    https://github.com/oromane/AnthroStat
+// License: MIT
 
-fn main() {
-  app_lib::run();
-}
+// Prevents addition

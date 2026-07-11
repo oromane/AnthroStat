@@ -1,7 +1,27 @@
 {
-  "name": "tmp_app",
+  "name": "anthrostat",
   "version": "0.1.0",
   "private": true,
+  "description": "AnthroStat — a sleek, minimalist cross-platform desktop widget to monitor your Claude AI session usage limits. Built with Tauri (Rust + Next.js).",
+  "author": "Oromane <romane.raphael.rossignol@gmail.com> (https://github.com/oromane)",
+  "license": "MIT",
+  "homepage": "https://github.com/oromane/AnthroStat#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oromane/AnthroStat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oromane/AnthroStat/issues"
+  },
+  "keywords": [
+    "anthrostat",
+    "claude",
+    "anthropic",
+    "usage-monitor",
+    "tauri",
+    "nextjs",
+    "desktop-widget"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,24 +32,4 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.110.2",
     "@tauri-apps/api": "^2.11.1",
-    "@tauri-apps/plugin-http": "^2.5.9",
-    "@tauri-apps/plugin-window-state": "^2.4.1",
-    "lucide-react": "^1.24.0",
-    "next": "16.2.10",
-    "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "recharts": "^3.9.2",
-    "zustand": "^5.0.14"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@tauri-apps/cli": "^2.11.4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.10",
-    "tailwindcss": "^4",
-    "typescript": "^5"
-  }
-}
+    "@tauri-apps/plu

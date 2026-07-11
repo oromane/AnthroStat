@@ -1,28 +1,34 @@
+<div align="center">
+
 # AnthroStat
 
-A sleek, minimalist, cross-platform desktop widget to monitor your Claude AI session usage limits. 
-Designed for power users who need to keep an eye on their Claude Pro limits without switching tabs.
+<img src="app-icon.png" alt="AnthroStat" width="120" />
 
-## Features
-- **Live Usage Tracking:** Real-time progress bar of your message limits.
-- **Historical Data:** Visual area chart of your usage history.
-- **Customizable:** Multi-language (EN, FR, ES, PT, RU), adjustable alert thresholds, and 12/24h time formats.
-- **Compact Mode:** A beautiful ultra-minimalist mode that sits quietly on your screen.
-- **Always on Top:** Never lose track of your limits.
+**A sleek, minimalist, cross-platform desktop widget to monitor your Claude AI session usage limits.**
 
-## How it works
-This app runs completely locally using **Tauri** (Rust + Next.js). It leverages your Claude `sessionKey` cookie to directly ping Anthropic's private usage API without passing through any external servers.
+Designed for power users who need to keep an eye on their Claude limits without switching tabs.
 
-> **Note on Unofficial API**: This tool uses an undocumented endpoint. It is inherently unstable and requires you to manually supply your `sessionKey` cookie. If Anthropic changes their API, the widget might need an update.
+[![Download](https://img.shields.io/badge/⬇_Download-Windows_.exe-6c4bf6?style=for-the-badge)](https://github.com/oromane/AnthroStat/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
+[![Built with Tauri](https://img.shields.io/badge/Built_with-Tauri-24C8DB?style=for-the-badge&logo=tauri)](https://tauri.app)
 
-## Installation
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Run the development environment: `npm run tauri dev`
-4. Build for production: `npm run tauri build`
+Made by [**Oromane**](https://github.com/oromane)
 
-## Configuration
-Upon first launch, click the Gear icon and paste your `sessionKey` (which you can find by inspecting your cookies on claude.ai).
+</div>
 
-## License
-MIT License.
+---
+
+## ⬇️ Download & Install (Windows)
+
+> **Get the app in one click — no build required.**
+
+| Installer | Size | Link |
+|-----------|------|------|
+| 🟣 **`AnthroStat_0.1.0_x64-setup.exe`** (recommended) | ~4 MB | **[Download the .exe »](https://github.com/oromane/AnthroStat/releases/latest)** |
+| 📦 `AnthroStat_0.1.0_x64_en-US.msi` | ~6 MB | [Download the .msi »](https://github.com/oromane/AnthroStat/releases/latest) |
+
+**Install in 3 steps:**
+
+1. Download **`AnthroStat_0.1.0_x64-setup.exe`** (also available in the [`releases/`](releases/) folder of this repo).
+2. Run the installer — AnthroStat installs in seconds and adds a Start Menu shortcut.
+3. Launch it, clic

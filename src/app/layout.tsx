@@ -1,3 +1,9 @@
+/**
+ * AnthroStat — root layout
+ * Author:  Oromane <https://github.com/oromane>
+ * Repo:    https://github.com/oromane/AnthroStat
+ * License: MIT
+ */
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -8,21 +14,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  applicationName: "AnthroStat",
   title: "AnthroStat",
   description: "A minimalist desktop widget to monitor Claude web session usage limits.",
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html
-      lang="en"
-      className={`${inter.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col font-sans bg-anthropic-bg text-anthropic-text overflow-hidden">{children}</body>
-    </html>
-  );
-}
+  authors: [{ name: "Oromane", url: "https://github.com/oromane" }],
+  creator: "Oromane",
+  keywords: ["AnthroStat", "Claude", "Anthropic", "usage monitor", "Tauri
